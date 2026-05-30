@@ -1,1048 +1,1655 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-LZFM07880Z"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jatin Raja | Flutter, Laravel & Full-Stack Product Developer</title>
+  <meta name="description" content="Jatin Raja is an independent Flutter, Laravel, WordPress and full-stack product developer from India, building mobile apps, web platforms, APIs and business systems for clients worldwide." />
+  <meta name="author" content="Jatin Raja" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.jatinraja.com/" />
 
-  gtag('config', 'G-LZFM07880Z');
-</script>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Jatin Raja — Full-Stack Mobile & Web Developer</title>
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
-<style>
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Jatin Raja | Flutter, Laravel & Full-Stack Product Developer" />
+  <meta property="og:description" content="Mobile apps, Laravel backends, WordPress platforms and full-stack product delivery from one accountable developer." />
+  <meta property="og:url" content="https://www.jatinraja.com/" />
+  <meta property="og:image" content="https://www.jatinraja.com/assets/img/MY-Profile-photo.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Jatin Raja | Flutter, Laravel & Full-Stack Product Developer" />
+  <meta name="twitter:description" content="Independent mobile and web developer helping founders and businesses build scalable products." />
+  <meta name="twitter:image" content="https://www.jatinraja.com/assets/img/MY-Profile-photo.jpg" />
 
-  :root {
-    --bg: #0a0a0f;
-    --bg2: #101018;
-    --bg3: #14141e;
-    --border: rgba(255,255,255,0.07);
-    --accent: #7c6dfa;
-    --accent2: #a78bfa;
-    --accent-glow: rgba(124,109,250,0.25);
-    --text: #f0f0f5;
-    --text2: #9898b0;
-    --text3: #5a5a78;
-    --green: #22c55e;
-    --card-bg: rgba(255,255,255,0.03);
-    --card-border: rgba(255,255,255,0.07);
-  }
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23141613'/%3E%3Cpath d='M18 43c7 0 9-3 9-10V18h8v17c0 11-6 16-17 16v-8Zm20-25h8v33h-8V18Z' fill='%23f4c35b'/%3E%3C/svg%3E" />
 
-  html { scroll-behavior: smooth; }
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Jatin Raja",
+    "url": "https://www.jatinraja.com/",
+    "image": "https://www.jatinraja.com/assets/img/MY-Profile-photo.jpg",
+    "jobTitle": "Independent Mobile & Web Developer",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Jalandhar",
+      "addressCountry": "India"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/in/jatinraja/"
+    ],
+    "knowsAbout": [
+      "Flutter",
+      "Laravel",
+      "WordPress",
+      "WooCommerce",
+      "REST APIs",
+      "MySQL",
+      "Mobile App Development",
+      "Full-Stack Development"
+    ]
+  }
+  </script>
 
-  body {
-    background: var(--bg);
-    color: var(--text);
-    font-family: 'Inter', sans-serif;
-    font-size: 16px;
-    line-height: 1.7;
-    overflow-x: hidden;
-    -webkit-font-smoothing: antialiased;
-  }
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
 
-  /* ─── SCROLLBAR ─── */
-  ::-webkit-scrollbar { width: 6px; }
-  ::-webkit-scrollbar-track { background: var(--bg); }
-  ::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 3px; }
+    :root {
+      --ink: #141613;
+      --ink-soft: #3d413a;
+      --muted: #686c62;
+      --line: #ded9cd;
+      --paper: #fbfaf6;
+      --paper-2: #f2eee4;
+      --paper-3: #e8f0e5;
+      --forest: #174439;
+      --forest-2: #226252;
+      --gold: #f4c35b;
+      --coral: #dd6b4d;
+      --mint: #cfe6d6;
+      --white: #ffffff;
+      --shadow: 0 24px 80px rgba(20, 22, 19, 0.14);
+      --radius: 8px;
+      --max: 1180px;
+      --nav-h: 72px;
+    }
 
-  /* ─── NAV ─── */
-  nav {
-    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-    display: flex; align-items: center; justify-content: space-between;
-    padding: 0 5vw;
-    height: 68px;
-    background: rgba(10,10,15,0.85);
-    backdrop-filter: blur(20px);
-    border-bottom: 1px solid var(--border);
-  }
-  .nav-logo {
-    font-family: 'Syne', sans-serif;
-    font-size: 1.15rem;
-    font-weight: 800;
-    letter-spacing: -0.02em;
-    color: var(--text);
-    text-decoration: none;
-  }
-  .nav-logo span { color: var(--accent); }
-  .nav-links { display: flex; gap: 2rem; list-style: none; }
-  .nav-links a {
-    color: var(--text2); text-decoration: none; font-size: 0.875rem;
-    font-weight: 500; letter-spacing: 0.01em;
-    transition: color 0.2s;
-  }
-  .nav-links a:hover { color: var(--text); }
-  .nav-cta {
-    background: var(--accent); color: #fff;
-    padding: 0.45rem 1.2rem; border-radius: 6px;
-    font-size: 0.85rem; font-weight: 600;
-    text-decoration: none; transition: opacity 0.2s;
-  }
-  .nav-cta:hover { opacity: 0.85; }
+    html {
+      scroll-behavior: smooth;
+    }
 
-  /* ─── HERO ─── */
-  #hero {
-    min-height: 100vh;
-    display: flex; align-items: center;
-    padding: 120px 5vw 80px;
-    position: relative;
-    overflow: hidden;
-  }
-  .hero-glow {
-    position: absolute;
-    top: -200px; left: 50%; transform: translateX(-60%);
-    width: 900px; height: 700px;
-    background: radial-gradient(ellipse at center, rgba(124,109,250,0.12) 0%, transparent 70%);
-    pointer-events: none;
-  }
-  .hero-inner { max-width: 900px; position: relative; z-index: 1; }
-  .availability-badge {
-    display: inline-flex; align-items: center; gap: 0.5rem;
-    background: rgba(34,197,94,0.1);
-    border: 1px solid rgba(34,197,94,0.25);
-    border-radius: 100px;
-    padding: 0.35rem 0.9rem;
-    font-size: 0.8rem; font-weight: 500; color: var(--green);
-    margin-bottom: 2rem;
-  }
-  .availability-dot {
-    width: 7px; height: 7px; border-radius: 50%;
-    background: var(--green);
-    box-shadow: 0 0 8px var(--green);
-    animation: pulse 2s ease-in-out infinite;
-  }
-  @keyframes pulse {
-    0%,100% { opacity: 1; transform: scale(1); }
-    50% { opacity: 0.6; transform: scale(1.3); }
-  }
-  h1 {
-    font-family: 'Syne', sans-serif;
-    font-size: clamp(2.4rem, 5.5vw, 4.2rem);
-    font-weight: 800;
-    line-height: 1.1;
-    letter-spacing: -0.03em;
-    color: var(--text);
-    margin-bottom: 1.5rem;
-  }
-  h1 .accent { color: var(--accent2); }
-  .hero-sub {
-    font-size: clamp(1rem, 2vw, 1.2rem);
-    color: var(--text2);
-    max-width: 620px;
-    margin-bottom: 1rem;
-    font-weight: 400;
-  }
-  .hero-sub strong { color: var(--text); font-weight: 600; }
-  .hero-support {
-    font-size: 0.9rem;
-    color: var(--text3);
-    max-width: 560px;
-    margin-bottom: 2.5rem;
-    font-style: italic;
-  }
-  .btn-group { display: flex; flex-wrap: wrap; gap: 0.85rem; }
-  .btn-primary {
-    background: var(--accent);
-    color: #fff;
-    padding: 0.8rem 1.8rem;
-    border-radius: 8px;
-    font-size: 0.95rem; font-weight: 600;
-    text-decoration: none;
-    transition: transform 0.2s, box-shadow 0.2s;
-    box-shadow: 0 0 24px var(--accent-glow);
-  }
-  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 0 36px var(--accent-glow); }
-  .btn-secondary {
-    background: transparent;
-    border: 1px solid var(--border);
-    color: var(--text);
-    padding: 0.8rem 1.8rem;
-    border-radius: 8px;
-    font-size: 0.95rem; font-weight: 500;
-    text-decoration: none;
-    transition: border-color 0.2s, background 0.2s;
-  }
-  .btn-secondary:hover { border-color: var(--accent); background: var(--accent-glow); }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
 
-  /* ─── SOCIAL PROOF BAR ─── */
-  #proof {
-    border-top: 1px solid var(--border);
-    border-bottom: 1px solid var(--border);
-    padding: 1.6rem 5vw;
-    background: var(--bg2);
-  }
-  .proof-inner {
-    display: flex; flex-wrap: wrap; gap: 1rem 3rem;
-    justify-content: center; align-items: center;
-    max-width: 1000px; margin: 0 auto;
-  }
-  .proof-item { display: flex; align-items: center; gap: 0.5rem; }
-  .proof-num {
-    font-family: 'Syne', sans-serif;
-    font-size: 1.3rem; font-weight: 800; color: var(--accent2);
-  }
-  .proof-label { font-size: 0.85rem; color: var(--text2); }
-  .proof-sep { color: var(--text3); font-size: 1.2rem; }
+    img {
+      display: block;
+      max-width: 100%;
+    }
 
-  /* ─── SECTIONS ─── */
-  section { padding: 100px 5vw; }
-  .section-label {
-    font-size: 0.75rem; font-weight: 600;
-    letter-spacing: 0.12em; text-transform: uppercase;
-    color: var(--accent); margin-bottom: 0.75rem;
-  }
-  .section-title {
-    font-family: 'Syne', sans-serif;
-    font-size: clamp(2rem, 4vw, 3rem);
-    font-weight: 800; letter-spacing: -0.03em;
-    color: var(--text); margin-bottom: 0.6rem; line-height: 1.1;
-  }
-  .section-sub {
-    font-size: 1rem; color: var(--text2);
-    max-width: 500px; margin-bottom: 3.5rem;
-  }
-  .max-w { max-width: 1200px; margin: 0 auto; }
+    a {
+      color: inherit;
+    }
 
-  /* ─── SERVICES ─── */
-  #services { background: var(--bg2); }
-  .services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.5px;
-    background: var(--border);
-    border: 1px solid var(--border);
-    border-radius: 16px;
-    overflow: hidden;
-  }
-  .service-card {
-    background: var(--bg2);
-    padding: 2.2rem;
-    transition: background 0.25s;
-    position: relative;
-    overflow: hidden;
-  }
-  .service-card::before {
-    content: '';
-    position: absolute; top: 0; left: 0; right: 0;
-    height: 2px;
-    background: linear-gradient(90deg, transparent, var(--accent), transparent);
-    opacity: 0; transition: opacity 0.3s;
-  }
-  .service-card:hover { background: var(--bg3); }
-  .service-card:hover::before { opacity: 1; }
-  .service-icon { font-size: 2rem; margin-bottom: 1.2rem; }
-  .service-title {
-    font-size: 1.05rem; font-weight: 700; color: var(--text);
-    margin-bottom: 0.75rem; letter-spacing: -0.01em;
-  }
-  .service-desc { font-size: 0.875rem; color: var(--text2); margin-bottom: 1.2rem; line-height: 1.65; }
-  .tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
-  .tag {
-    font-size: 0.72rem; font-weight: 500;
-    background: rgba(124,109,250,0.1);
-    border: 1px solid rgba(124,109,250,0.2);
-    color: var(--accent2); padding: 0.25rem 0.6rem;
-    border-radius: 4px; letter-spacing: 0.01em;
-  }
+    button,
+    input,
+    textarea {
+      font: inherit;
+    }
 
-  /* ─── CASE STUDIES ─── */
-  #work { background: var(--bg); }
-  .case-studies { display: flex; flex-direction: column; gap: 1.5rem; }
-  .case-card {
-    background: var(--card-bg);
-    border: 1px solid var(--card-border);
-    border-radius: 16px;
-    padding: 2.5rem;
-    transition: border-color 0.25s, transform 0.25s;
-    position: relative; overflow: hidden;
-  }
-  .case-card::after {
-    content: '';
-    position: absolute; inset: 0;
-    background: linear-gradient(135deg, rgba(124,109,250,0.03) 0%, transparent 60%);
-    pointer-events: none;
-  }
-  .case-card:hover { border-color: rgba(124,109,250,0.3); transform: translateY(-2px); }
-  .case-header { display: flex; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.5rem; }
-  .case-meta { display: flex; flex-direction: column; gap: 0.5rem; }
-  .case-emoji { font-size: 2rem; margin-bottom: 0.5rem; display: block; }
-  .case-title {
-    font-family: 'Syne', sans-serif;
-    font-size: 1.35rem; font-weight: 800;
-    color: var(--text); letter-spacing: -0.02em;
-  }
-  .case-oneliner { font-size: 0.9rem; color: var(--text2); font-style: italic; }
-  .case-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
-  .case-tag {
-    font-size: 0.72rem; font-weight: 500;
-    background: rgba(255,255,255,0.05);
-    border: 1px solid var(--border);
-    color: var(--text2);
-    padding: 0.3rem 0.65rem; border-radius: 100px;
-  }
-  .status-badge {
-    display: inline-flex; align-items: center; gap: 0.4rem;
-    font-size: 0.72rem; font-weight: 600;
-    background: rgba(234,179,8,0.1);
-    border: 1px solid rgba(234,179,8,0.25);
-    color: #eab308; padding: 0.3rem 0.7rem; border-radius: 100px;
-  }
-  .status-live {
-    background: rgba(34,197,94,0.1);
-    border-color: rgba(34,197,94,0.25); color: var(--green);
-  }
-  .case-body { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
-  @media(max-width:700px) { .case-body { grid-template-columns: 1fr; } }
-  .case-col-label {
-    font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em;
-    text-transform: uppercase; color: var(--accent);
-    margin-bottom: 0.5rem;
-  }
-  .case-col-text { font-size: 0.875rem; color: var(--text2); line-height: 1.7; }
-  .case-features { list-style: none; margin-top: 0.5rem; }
-  .case-features li {
-    font-size: 0.85rem; color: var(--text2); padding: 0.25rem 0;
-    padding-left: 1.1rem; position: relative;
-  }
-  .case-features li::before {
-    content: '→'; position: absolute; left: 0;
-    color: var(--accent); font-size: 0.75rem;
-  }
-  .case-footer { margin-top: 1.5rem; display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; }
-  .case-stack { font-size: 0.78rem; color: var(--text3); }
-  .case-stack strong { color: var(--text2); }
-  .case-link {
-    font-size: 0.82rem; color: var(--accent2); text-decoration: none;
-    font-weight: 500; display: inline-flex; align-items: center; gap: 0.3rem;
-  }
-  .case-link:hover { text-decoration: underline; }
+    :focus-visible {
+      outline: 3px solid var(--gold);
+      outline-offset: 3px;
+    }
 
-  /* ─── TECH STACK ─── */
-  #stack { background: var(--bg2); }
-  .stack-groups { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; }
-  .stack-group {
-    background: var(--card-bg);
-    border: 1px solid var(--card-border);
-    border-radius: 12px; padding: 1.8rem;
-    transition: border-color 0.25s;
-  }
-  .stack-group:hover { border-color: rgba(124,109,250,0.3); }
-  .stack-group-label {
-    font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em;
-    text-transform: uppercase; color: var(--accent); margin-bottom: 1rem;
-  }
-  .stack-items { display: flex; flex-wrap: wrap; gap: 0.5rem; }
-  .stack-item {
-    background: rgba(255,255,255,0.05);
-    border: 1px solid var(--border);
-    color: var(--text);
-    font-size: 0.82rem; font-weight: 500;
-    padding: 0.4rem 0.85rem; border-radius: 6px;
-    transition: background 0.2s, border-color 0.2s;
-  }
-  .stack-item:hover { background: rgba(124,109,250,0.12); border-color: rgba(124,109,250,0.3); color: var(--accent2); }
+    .shell {
+      width: min(var(--max), calc(100% - 40px));
+      margin-inline: auto;
+    }
 
-  /* ─── ABOUT ─── */
-  #about { background: var(--bg); }
-  .about-grid { display: grid; grid-template-columns: 3fr 2fr; gap: 5rem; align-items: start; }
-  @media(max-width:800px) { .about-grid { grid-template-columns: 1fr; gap: 3rem; } }
-  .about-text p { font-size: 0.975rem; color: var(--text2); margin-bottom: 1.2rem; line-height: 1.8; }
-  .about-text p strong { color: var(--text); font-weight: 600; }
-  .about-closing {
-    font-size: 1.35rem; font-weight: 700; font-style: italic;
-    color: var(--text); margin-top: 1.5rem;
-    font-family: 'Syne', sans-serif; letter-spacing: -0.02em;
-  }
-  .about-side { display: flex; flex-direction: column; gap: 1.2rem; }
-  .about-stat {
-    background: var(--card-bg);
-    border: 1px solid var(--card-border);
-    border-radius: 12px; padding: 1.5rem;
-    transition: border-color 0.25s;
-  }
-  .about-stat:hover { border-color: rgba(124,109,250,0.3); }
-  .about-stat-num {
-    font-family: 'Syne', sans-serif;
-    font-size: 2rem; font-weight: 800; color: var(--accent2); line-height: 1;
-  }
-  .about-stat-label { font-size: 0.82rem; color: var(--text2); margin-top: 0.25rem; }
+    .site-nav {
+      position: fixed;
+      inset: 0 0 auto 0;
+      z-index: 100;
+      height: var(--nav-h);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+      background: rgba(20, 22, 19, 0.84);
+      backdrop-filter: blur(18px);
+      color: var(--white);
+    }
 
-  /* ─── PROCESS ─── */
-  #process { background: var(--bg2); }
-  .process-steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0; position: relative; }
-  .process-step {
-    padding: 2rem 1.8rem;
-    border: 1px solid var(--border);
-    margin: -1px 0 0 -1px;
-    background: var(--bg2);
-    transition: background 0.25s;
-    position: relative;
-  }
-  .process-step:hover { background: var(--bg3); }
-  .step-num {
-    font-family: 'Syne', sans-serif;
-    font-size: 2.5rem; font-weight: 800;
-    color: rgba(124,109,250,0.2); line-height: 1;
-    margin-bottom: 0.75rem;
-  }
-  .step-title { font-size: 0.95rem; font-weight: 700; color: var(--text); margin-bottom: 0.5rem; }
-  .step-desc { font-size: 0.82rem; color: var(--text2); line-height: 1.65; }
+    .nav-inner {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
 
-  /* ─── CONTACT ─── */
-  #contact {
-    background: var(--bg);
-    text-align: center;
-  }
-  #contact .section-title { font-size: clamp(2rem, 5vw, 3.5rem); }
-  #contact .section-sub { margin-left: auto; margin-right: auto; text-align: center; }
-  .contact-btns { display: flex; justify-content: center; flex-wrap: wrap; gap: 1rem; margin-bottom: 2rem; }
-  .contact-email { font-size: 0.875rem; color: var(--text2); }
-  .contact-email a { color: var(--accent2); text-decoration: none; }
-  .contact-email a:hover { text-decoration: underline; }
-  .contact-location {
-    font-size: 0.8rem; color: var(--text3); margin-top: 0.75rem;
-  }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--white);
+      text-decoration: none;
+      font-weight: 900;
+      letter-spacing: 0;
+    }
 
-  /* ─── FOOTER ─── */
-  footer {
-    border-top: 1px solid var(--border);
-    padding: 2rem 5vw;
-    display: flex; align-items: center; justify-content: space-between;
-    flex-wrap: wrap; gap: 1rem;
-    background: var(--bg2);
-  }
-  .footer-name {
-    font-family: 'Syne', sans-serif;
-    font-size: 0.95rem; font-weight: 800; color: var(--text);
-  }
-  .footer-name span { color: var(--accent); }
-  .footer-copy { font-size: 0.78rem; color: var(--text3); }
-  .social-links { display: flex; gap: 1rem; }
-  .social-link {
-    font-size: 0.82rem; color: var(--text2); text-decoration: none;
-    font-weight: 500; padding: 0.4rem 0.8rem;
-    border: 1px solid var(--border); border-radius: 6px;
-    transition: border-color 0.2s, color 0.2s;
-  }
-  .social-link:hover { border-color: var(--accent); color: var(--accent2); }
+    .brand-mark {
+      display: grid;
+      place-items: center;
+      width: 38px;
+      height: 38px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, 0.08);
+      color: var(--gold);
+      font-size: 0.9rem;
+    }
 
-  /* ─── DIVIDER ─── */
-  .divider {
-    width: 40px; height: 3px;
-    background: linear-gradient(90deg, var(--accent), var(--accent2));
-    border-radius: 2px; margin-bottom: 1.5rem;
-  }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
 
-  /* ─── RESPONSIVE ─── */
-  @media(max-width:768px) {
-    nav .nav-links { display: none; }
-    .case-header { flex-direction: column; }
-    .proof-sep { display: none; }
-  }
+    .nav-links a {
+      color: rgba(255, 255, 255, 0.78);
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 700;
+      transition: color 180ms ease;
+    }
 
+    .nav-links a:hover {
+      color: var(--white);
+    }
 
-  /* ─── PHOTO ─── */
-  .about-photo-wrap {
-    position: relative; flex-shrink: 0;
-  }
-  /* ─── ABOUT PHOTO ─── */
-  .about-grid-new {
-    display: grid;
-    grid-template-columns: 1fr 1.8fr;
-    gap: 4rem;
-    align-items: start;
-  }
-  @media(max-width:900px) {
-    .about-grid-new { grid-template-columns: 1fr; gap: 2.5rem; }
-  }
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
 
-  .about-left-col {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-  }
+    .menu-toggle {
+      display: none;
+      width: 42px;
+      height: 42px;
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, 0.08);
+      color: var(--white);
+      cursor: pointer;
+    }
 
-  .about-photo-frame {
-    position: relative;
-    display: inline-block;
-    width: 100%;
-  }
+    .menu-toggle span {
+      display: block;
+      width: 18px;
+      height: 2px;
+      margin: 4px auto;
+      background: currentColor;
+      border-radius: 10px;
+      transition: transform 180ms ease, opacity 180ms ease;
+    }
 
-  .about-photo {
-    width: 100%;
-    max-width: 340px;
-    aspect-ratio: 3/4;
-    object-fit: cover;
-    object-position: top center;
-    border-radius: 20px;
-    border: 1px solid rgba(124,109,250,0.3);
-    display: block;
-    box-shadow: 0 0 60px rgba(124,109,250,0.15), 0 24px 60px rgba(0,0,0,0.5);
-  }
-  .about-photo-badge {
-    position: absolute; bottom: -14px; left: 50%; transform: translateX(-50%);
-    background: var(--accent); color: #fff;
-    font-size: 0.72rem; font-weight: 700; letter-spacing: 0.05em;
-    padding: 0.35rem 1rem; border-radius: 100px; white-space: nowrap;
-    box-shadow: 0 4px 20px rgba(124,109,250,0.4);
-  }
+    .menu-toggle.is-open span:nth-child(1) {
+      transform: translateY(6px) rotate(45deg);
+    }
 
-  .about-stats-inline {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0.85rem;
-    padding-top: 1rem;
-  }
-  .about-stat-small {
-    background: var(--card-bg);
-    border: 1px solid var(--card-border);
-    border-radius: 10px;
-    padding: 1rem;
-    transition: border-color 0.25s;
-  }
-  .about-stat-small:hover { border-color: rgba(124,109,250,0.3); }
-  .about-stat-small .about-stat-num { font-size: 1.5rem; }
-  .about-stat-small .about-stat-label { font-size: 0.72rem; }
+    .menu-toggle.is-open span:nth-child(2) {
+      opacity: 0;
+    }
 
-  @media(max-width:400px) { .about-stats-inline { grid-template-columns: 1fr; } }
+    .menu-toggle.is-open span:nth-child(3) {
+      transform: translateY(-6px) rotate(-45deg);
+    }
 
-  /* ─── SCREENSHOT CAROUSEL ─── */
-  .screenshots {
-    margin-top: 1.8rem;
-    border-top: 1px solid var(--border);
-    padding-top: 1.5rem;
-  }
-  .screenshots-label {
-    font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em;
-    text-transform: uppercase; color: var(--accent); margin-bottom: 0.85rem;
-  }
-  .screens-track-wrap {
-    position: relative; overflow: hidden;
-  }
-  .screens-track {
-    display: flex; gap: 0.85rem;
-    overflow-x: auto; scroll-snap-type: x mandatory;
-    scrollbar-width: none; -ms-overflow-style: none;
-    padding-bottom: 4px;
-    cursor: grab;
-  }
-  .screens-track::-webkit-scrollbar { display: none; }
-  .screens-track.grabbing { cursor: grabbing; }
-  .screen-img {
-    flex-shrink: 0;
-    width: 160px; height: 290px;
-    object-fit: cover; object-position: top;
-    border-radius: 16px;
-    border: 1px solid var(--border);
-    scroll-snap-align: start;
-    transition: transform 0.2s, box-shadow 0.2s;
-    cursor: pointer;
-  }
-  .screen-img:hover {
-    transform: translateY(-4px) scale(1.02);
-    box-shadow: 0 12px 40px rgba(0,0,0,0.5);
-  }
-  /* wide screenshot (websites) */
-  .screen-img.wide {
-    width: 320px; height: 240px;
-    object-position: top;
-  }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 46px;
+      padding: 0 18px;
+      border-radius: var(--radius);
+      border: 1px solid transparent;
+      text-decoration: none;
+      font-weight: 800;
+      font-size: 0.92rem;
+      line-height: 1;
+      white-space: nowrap;
+      transition: transform 180ms ease, background 180ms ease, border-color 180ms ease;
+    }
 
-  /* ─── LIGHTBOX ─── */
-  #lightbox {
-    display: none; position: fixed; inset: 0; z-index: 999;
-    background: rgba(0,0,0,0.92); backdrop-filter: blur(12px);
-    align-items: center; justify-content: center;
-  }
-  #lightbox.open { display: flex; }
-  #lightbox img {
-    max-width: 90vw; max-height: 90vh;
-    border-radius: 16px;
-    box-shadow: 0 0 80px rgba(0,0,0,0.8);
-    object-fit: contain;
-  }
-  #lightbox-close {
-    position: absolute; top: 1.5rem; right: 1.5rem;
-    background: rgba(255,255,255,0.1); border: 1px solid var(--border);
-    color: #fff; font-size: 1.3rem; width: 40px; height: 40px;
-    border-radius: 50%; cursor: pointer; display: flex;
-    align-items: center; justify-content: center;
-    transition: background 0.2s;
-  }
-  #lightbox-close:hover { background: rgba(255,255,255,0.2); }
+    .btn:hover {
+      transform: translateY(-2px);
+    }
 
-  /* ─── ANIMATIONS ─── */
-  .fade-up {
-    opacity: 0; transform: translateY(28px);
-    transition: opacity 0.65s ease, transform 0.65s ease;
-  }
-  .fade-up.visible { opacity: 1; transform: translateY(0); }
-</style>
+    .btn-primary {
+      background: var(--gold);
+      color: var(--ink);
+      box-shadow: 0 16px 38px rgba(244, 195, 91, 0.24);
+    }
+
+    .btn-dark {
+      background: var(--ink);
+      color: var(--white);
+    }
+
+    .btn-outline {
+      border-color: rgba(255, 255, 255, 0.34);
+      color: var(--white);
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .btn-outline:hover {
+      background: rgba(255, 255, 255, 0.14);
+    }
+
+    .hero {
+      min-height: calc(100svh - 18px);
+      display: grid;
+      align-items: start;
+      padding: calc(var(--nav-h) + 42px) 0 34px;
+      color: var(--white);
+      background:
+        linear-gradient(90deg, rgba(20, 22, 19, 0.96) 0%, rgba(20, 22, 19, 0.88) 42%, rgba(20, 22, 19, 0.38) 100%),
+        linear-gradient(0deg, rgba(20, 22, 19, 0.7), rgba(20, 22, 19, 0.1)),
+        url("assets/img/MY-Profile-photo.jpg") right center / cover no-repeat,
+        var(--ink);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: auto 0 0 0;
+      height: 36%;
+      background: linear-gradient(0deg, rgba(20, 22, 19, 0.78), transparent);
+      pointer-events: none;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+     /* max-width: 720px;*/
+      padding-bottom: 10px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      width: fit-content;
+      margin: 0 0 20px;
+      padding: 8px 12px;
+      border: 1px solid rgba(207, 230, 214, 0.34);
+      border-radius: 999px;
+      background: rgba(207, 230, 214, 0.12);
+      color: var(--mint);
+      font-size: 0.82rem;
+      font-weight: 800;
+    }
+
+    .status-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #56d17b;
+      box-shadow: 0 0 0 6px rgba(86, 209, 123, 0.16);
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin-top: 0;
+    }
+
+    h1 {
+      margin-bottom: 18px;
+      max-width: 760px;
+      font-size: clamp(2.4rem, 5vw, 4.35rem);
+      line-height: 1;
+      letter-spacing: 0;
+      font-weight: 900;
+    }
+
+    .hero-lede {
+      max-width: 660px;
+      margin-bottom: 16px;
+      color: rgba(255, 255, 255, 0.86);
+      font-size: clamp(1.02rem, 1.8vw, 1.18rem);
+      line-height: 1.55;
+      font-weight: 600;
+    }
+
+    .hero-note {
+      max-width: 610px;
+      margin-bottom: 22px;
+      color: rgba(255, 255, 255, 0.66);
+      font-size: 0.98rem;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 26px;
+    }
+
+    .hero-proof {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 1px;
+      /*max-width: 920px;*/
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      background: rgba(255, 255, 255, 0.13);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: 0 22px 70px rgba(0, 0, 0, 0.26);
+    }
+
+    .proof-item {
+      min-height: 88px;
+      padding: 14px;
+      background: rgba(20, 22, 19, 0.62);
+    }
+
+    .proof-number {
+      display: block;
+      color: var(--gold);
+      font-size: clamp(1.22rem, 2.5vw, 1.72rem);
+      line-height: 1;
+      font-weight: 900;
+    }
+
+    .proof-label {
+      display: block;
+      margin-top: 6px;
+      color: rgba(255, 255, 255, 0.72);
+      font-size: 0.82rem;
+      font-weight: 700;
+    }
+
+    section {
+      padding: 96px 0;
+      scroll-margin-top: var(--nav-h);
+    }
+
+    .section-head {
+      display: grid;
+      grid-template-columns: minmax(0, 0.9fr) minmax(280px, 0.6fr);
+      align-items: end;
+      gap: 36px;
+      margin-bottom: 36px;
+    }
+
+    .section-kicker {
+      margin: 0 0 12px;
+      color: var(--forest-2);
+      font-size: 0.78rem;
+      font-weight: 900;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .section-title {
+      margin-bottom: 0;
+      font-size: clamp(2rem, 4.2vw, 3.7rem);
+      line-height: 1.02;
+      letter-spacing: 0;
+      font-weight: 900;
+    }
+
+    .section-copy {
+      margin: 0;
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    .services {
+      background: var(--paper);
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      overflow: hidden;
+      background: var(--line);
+      gap: 1px;
+    }
+
+    .service-card {
+      padding: 28px;
+      background: var(--white);
+      min-height: 284px;
+    }
+
+    .card-icon {
+      display: grid;
+      place-items: center;
+      width: 42px;
+      height: 42px;
+      margin-bottom: 34px;
+      border-radius: var(--radius);
+      background: var(--paper-3);
+      color: var(--forest);
+      font-weight: 900;
+    }
+
+    .service-card h3,
+    .engagement-card h3,
+    .case-card h3,
+    .stack-card h3,
+    .process-step h3 {
+      margin-bottom: 12px;
+      font-size: 1.08rem;
+      line-height: 1.25;
+      font-weight: 900;
+    }
+
+    .service-card p,
+    .engagement-card p,
+    .case-card p,
+    .process-step p {
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 20px;
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      min-height: 28px;
+      padding: 0 10px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: var(--paper);
+      color: var(--ink-soft);
+      font-size: 0.76rem;
+      font-weight: 800;
+    }
+
+    .work,
+    .process {
+      background: var(--paper-2);
+    }
+
+    .case-list {
+      display: grid;
+      gap: 18px;
+    }
+
+    .case-card {
+      display: grid;
+      grid-template-columns: minmax(0, 0.82fr) minmax(360px, 1fr);
+      gap: 28px;
+      padding: 28px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--white);
+      box-shadow: 0 18px 60px rgba(20, 22, 19, 0.06);
+    }
+
+    .case-card.featured {
+      border-color: rgba(34, 98, 82, 0.32);
+      background: linear-gradient(135deg, #ffffff 0%, #f4f8f2 100%);
+    }
+
+    .case-meta {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 18px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      min-height: 30px;
+      padding: 0 10px;
+      border-radius: 999px;
+      background: var(--paper-3);
+      color: var(--forest);
+      font-size: 0.74rem;
+      font-weight: 900;
+    }
+
+    .badge-live {
+      background: #e8f6ed;
+      color: #11623a;
+    }
+
+    .badge-build {
+      background: #fff3d4;
+      color: #7a5100;
+    }
+
+    .case-card h3 {
+      font-size: clamp(1.42rem, 3vw, 2rem);
+    }
+
+    .case-problem {
+      padding-top: 14px;
+      margin-top: 20px;
+      border-top: 1px solid var(--line);
+    }
+
+    .case-problem strong {
+      display: block;
+      margin-bottom: 6px;
+      color: var(--ink);
+      font-size: 0.78rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .feature-list {
+      display: grid;
+      gap: 9px;
+      margin: 16px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .feature-list li {
+      position: relative;
+      padding-left: 20px;
+      color: var(--ink-soft);
+      font-size: 0.93rem;
+    }
+
+    .feature-list li::before {
+      content: "";
+      position: absolute;
+      top: 0.72em;
+      left: 0;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--coral);
+      transform: translateY(-50%);
+    }
+
+    .screens {
+      min-width: 0;
+    }
+
+    .screens-label {
+      margin-bottom: 12px;
+      color: var(--forest-2);
+      font-size: 0.78rem;
+      font-weight: 900;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .screen-rail {
+      display: flex;
+      gap: 12px;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      padding: 4px 4px 16px;
+      scrollbar-color: var(--forest) transparent;
+    }
+
+    .screen-img {
+      flex: 0 0 156px;
+      width: 156px;
+      height: 292px;
+      object-fit: cover;
+      object-position: top;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--paper-2);
+      cursor: zoom-in;
+      scroll-snap-align: start;
+      box-shadow: 0 16px 46px rgba(20, 22, 19, 0.12);
+      transition: transform 180ms ease, box-shadow 180ms ease;
+    }
+
+    .screen-img:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 24px 60px rgba(20, 22, 19, 0.18);
+    }
+
+    .screen-img.wide {
+      flex-basis: 312px;
+      width: 312px;
+      height: 228px;
+    }
+
+    .engagements {
+      background: var(--forest);
+      color: var(--white);
+    }
+
+    .engagements .section-kicker {
+      color: var(--gold);
+    }
+
+    .engagements .section-copy {
+      color: rgba(255, 255, 255, 0.72);
+    }
+
+    .engagement-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .engagement-card {
+      min-height: 260px;
+      padding: 28px;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .engagement-card p {
+      color: rgba(255, 255, 255, 0.72);
+    }
+
+    .engagement-card .tag {
+      border-color: rgba(255, 255, 255, 0.18);
+      background: rgba(255, 255, 255, 0.1);
+      color: var(--white);
+    }
+
+    .stack {
+      background: var(--paper);
+    }
+
+    .stack-layout {
+      display: grid;
+      grid-template-columns: 0.92fr 1.08fr;
+      gap: 42px;
+      align-items: start;
+    }
+
+    .profile-panel {
+      position: sticky;
+      top: calc(var(--nav-h) + 24px);
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--white);
+      box-shadow: var(--shadow);
+    }
+
+    .profile-panel img {
+      width: 100%;
+      aspect-ratio: 4 / 4.5;
+      object-fit: cover;
+      object-position: top center;
+    }
+
+    .profile-body {
+      padding: 24px;
+    }
+
+    .profile-body h3 {
+      margin: 0 0 8px;
+      font-size: 1.4rem;
+      line-height: 1.15;
+      font-weight: 900;
+    }
+
+    .profile-body p {
+      margin-bottom: 0;
+      color: var(--muted);
+    }
+
+    .stack-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .stack-card {
+      padding: 24px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--white);
+    }
+
+    .about-text {
+      margin-top: 32px;
+      padding: 30px;
+      border-left: 6px solid var(--gold);
+      background: var(--paper-2);
+      border-radius: var(--radius);
+    }
+
+    .about-text p {
+      color: var(--ink-soft);
+    }
+
+    .about-text p:last-child {
+      margin-bottom: 0;
+    }
+
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 1px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      overflow: hidden;
+      background: var(--line);
+    }
+
+    .process-step {
+      min-height: 268px;
+      padding: 24px;
+      background: var(--white);
+    }
+
+    .step-number {
+      display: block;
+      margin-bottom: 40px;
+      color: var(--coral);
+      font-size: 2rem;
+      font-weight: 900;
+      line-height: 1;
+    }
+
+    .contact {
+      padding: 94px 0;
+      color: var(--white);
+      background:
+        linear-gradient(90deg, rgba(20, 22, 19, 0.95), rgba(20, 22, 19, 0.82)),
+        url("assets/img/himrishtey-1.PNG") right center / auto 130% no-repeat,
+        var(--ink);
+    }
+
+    .contact-box {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      align-items: end;
+      gap: 32px;
+    }
+
+    .contact h2 {
+      max-width: 760px;
+      margin-bottom: 16px;
+      font-size: clamp(2.2rem, 5vw, 4.6rem);
+      line-height: 1;
+      letter-spacing: 0;
+      font-weight: 900;
+    }
+
+    .contact p {
+      max-width: 620px;
+      color: rgba(255, 255, 255, 0.76);
+    }
+
+    .contact-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: flex-end;
+    }
+
+    .contact-details {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px 22px;
+      margin-top: 28px;
+      color: rgba(255, 255, 255, 0.78);
+      font-size: 0.94rem;
+      font-weight: 700;
+    }
+
+    .contact-details a {
+      text-decoration-color: rgba(255, 255, 255, 0.34);
+      text-underline-offset: 4px;
+    }
+
+    footer {
+      padding: 28px 0;
+      background: var(--ink);
+      color: rgba(255, 255, 255, 0.7);
+      border-top: 1px solid rgba(255, 255, 255, 0.14);
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .footer-brand {
+      color: var(--white);
+      font-weight: 900;
+    }
+
+    .footer-links {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .footer-links a {
+      color: rgba(255, 255, 255, 0.76);
+      text-decoration: none;
+      font-weight: 800;
+      font-size: 0.9rem;
+    }
+
+    .lightbox {
+      position: fixed;
+      inset: 0;
+      z-index: 200;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      background: rgba(20, 22, 19, 0.92);
+      backdrop-filter: blur(10px);
+    }
+
+    .lightbox.is-open {
+      display: flex;
+    }
+
+    .lightbox img {
+      max-width: min(94vw, 980px);
+      max-height: 88vh;
+      object-fit: contain;
+      border-radius: var(--radius);
+      box-shadow: 0 28px 90px rgba(0, 0, 0, 0.45);
+    }
+
+    .lightbox-close {
+      position: absolute;
+      top: 18px;
+      right: 18px;
+      display: grid;
+      place-items: center;
+      width: 44px;
+      height: 44px;
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, 0.1);
+      color: var(--white);
+      cursor: pointer;
+      font-size: 1.3rem;
+      line-height: 1;
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(18px);
+      transition: opacity 520ms ease, transform 520ms ease;
+    }
+
+    .reveal.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (max-width: 1100px) {
+      .service-grid,
+      .process-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .case-card,
+      .stack-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .profile-panel {
+        position: static;
+      }
+    }
+
+    @media (max-width: 880px) {
+      :root {
+        --nav-h: 68px;
+      }
+
+      .shell {
+        width: min(100% - 28px, var(--max));
+      }
+
+      .site-nav {
+        background: rgba(20, 22, 19, 0.94);
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      .nav-links {
+        position: fixed;
+        top: var(--nav-h);
+        left: 14px;
+        right: 14px;
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding: 8px;
+        border: 1px solid rgba(255, 255, 255, 0.16);
+        border-radius: var(--radius);
+        background: var(--ink);
+        box-shadow: 0 24px 70px rgba(0, 0, 0, 0.3);
+      }
+
+      .nav-links.is-open {
+        display: flex;
+      }
+
+      .nav-links a {
+        display: block;
+        padding: 14px;
+      }
+
+      .nav-actions .btn {
+        min-height: 42px;
+        padding: 0 12px;
+        font-size: 0.82rem;
+      }
+
+      .hero {
+        align-items: end;
+        background:
+          linear-gradient(0deg, rgba(20, 22, 19, 0.94), rgba(20, 22, 19, 0.58)),
+          url("assets/img/MY-Profile-photo.jpg") center top / cover no-repeat,
+          var(--ink);
+      }
+
+      .hero-proof {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .section-head,
+      .contact-box {
+        grid-template-columns: 1fr;
+      }
+
+      .engagement-grid,
+      .stack-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-actions {
+        justify-content: flex-start;
+      }
+    }
+
+    @media (max-width: 620px) {
+      body {
+        font-size: 15px;
+      }
+
+      section {
+        padding: 72px 0;
+      }
+
+      .brand span:last-child {
+        display: none;
+      }
+
+      .hero {
+        min-height: auto;
+        padding: calc(var(--nav-h) + 34px) 0 26px;
+      }
+
+      h1 {
+        font-size: clamp(2.1rem, 11.5vw, 3.05rem);
+        line-height: 1.03;
+      }
+
+      .hero-lede {
+        font-size: 0.98rem;
+      }
+
+      .hero-note {
+        margin-bottom: 18px;
+        font-size: 0.9rem;
+      }
+
+      .hero-actions,
+      .contact-actions {
+        flex-direction: column;
+      }
+
+      .hero-actions .btn,
+      .contact-actions .btn {
+        width: 100%;
+      }
+
+      .hero-proof,
+      .service-grid,
+      .process-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .proof-item {
+        min-height: auto;
+      }
+
+      .service-card,
+      .case-card,
+      .engagement-card,
+      .stack-card,
+      .process-step,
+      .about-text {
+        padding: 22px;
+      }
+
+      .case-card {
+        gap: 18px;
+      }
+
+      .screen-img {
+        flex-basis: 138px;
+        width: 138px;
+        height: 258px;
+      }
+
+      .screen-img.wide {
+        flex-basis: 260px;
+        width: 260px;
+        height: 190px;
+      }
+
+      .contact {
+        background:
+          linear-gradient(0deg, rgba(20, 22, 19, 0.96), rgba(20, 22, 19, 0.84)),
+          url("assets/img/himrishtey-1.PNG") center top / cover no-repeat,
+          var(--ink);
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        scroll-behavior: auto !important;
+        transition: none !important;
+        animation: none !important;
+      }
+
+      .reveal {
+        opacity: 1;
+        transform: none;
+      }
+    }
+  </style>
 </head>
+
 <body>
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="shell nav-inner">
+      <a class="brand" href="#top" aria-label="Jatin Raja home">
+        <span class="brand-mark">JR</span>
+        <span>Jatin Raja</span>
+      </a>
 
-<!-- NAV -->
-<nav>
-  <a href="#hero" class="nav-logo">JR<span>.</span></a>
-  <ul class="nav-links">
-    <li><a href="#services">Services</a></li>
-    <li><a href="#work">Work</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#process">Process</a></li>
-  </ul>
-  <a href="#contact" class="nav-cta">Book a Free Call</a>
-</nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#stack">Stack</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
 
-<!-- HERO -->
-<section id="hero">
-  <div class="hero-glow"></div>
-  <div class="hero-inner fade-up visible">
-    <div class="availability-badge">
-      <span class="availability-dot"></span>
-      Available for new projects — Remote & Worldwide
+      <div class="nav-actions">
+        <a class="btn btn-primary" href="https://calendly.com/dev-jatin1609" target="_blank" rel="noopener noreferrer">Book Call</a>
+        <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-controls="navLinks" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
     </div>
-    <h1>I Build Mobile &amp; Web<br/>Products That <span class="accent">Work in<br/>the Real World.</span></h1>
-    <p class="hero-sub"><strong>Flutter apps. Laravel backends. Full-stack systems.</strong> — End-to-end ownership. One trusted partner. 10+ years of experience.</p>
-    <p class="hero-support">From a bus booking platform in Cameroon to a matrimonial app serving thousands across India — I turn complex ideas into reliable digital products.</p>
-    <div class="btn-group">
-      <a href="#work" class="btn-primary">View My Work</a>
-      <a href="#contact" class="btn-secondary">Book a Free Call</a>
-    </div>
-  </div>
-</section>
+  </nav>
 
-<!-- SOCIAL PROOF BAR -->
-<div id="proof">
-  <div class="proof-inner">
-    <div class="proof-item"><span class="proof-num">10+</span><span class="proof-label">Years of Experience</span></div>
-    <span class="proof-sep">·</span>
-    <div class="proof-item"><span class="proof-num">15+</span><span class="proof-label">Projects Shipped</span></div>
-    <span class="proof-sep">·</span>
-    <div class="proof-item"><span class="proof-num">6</span><span class="proof-label">Countries — India · Cameroon · US · Canada · Australia</span></div>
-    <span class="proof-sep">·</span>
-    <div class="proof-item"><span class="proof-num" style="font-size:1rem;color:var(--text2);font-family:Inter">Full-Stack</span><span class="proof-label">Mobile &amp; Web</span></div>
-  </div>
-</div>
+  <header class="hero" id="top">
+    <div class="shell hero-content">
+      <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Available for new projects · Remote worldwide</p>
+      <h1>Full-stack mobile and web products, built by one accountable partner.</h1>
+      <p class="hero-lede">I build Flutter apps, Laravel backends, WordPress platforms, APIs and business systems for founders and teams that need reliable delivery without handoffs.</p>
+      <p class="hero-note">From bus booking in Cameroon to matrimonial platforms across India, I turn complex workflows into products people can actually use.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#work">View Selected Work</a>
+        <a class="btn btn-outline" href="#contact">Start a Project</a>
+      </div>
 
-<!-- SERVICES -->
-<section id="services">
-  <div class="max-w">
-    <p class="section-label fade-up">What I Build</p>
-    <h2 class="section-title fade-up">End-to-end solutions,<br/>zero handoffs.</h2>
-    <p class="section-sub fade-up">End-to-end development — no handoffs, no coordination overhead.</p>
-    <div class="services-grid fade-up">
-      <div class="service-card">
-        <div class="service-icon">📱</div>
-        <div class="service-title">Mobile App Development</div>
-        <p class="service-desc">Cross-platform mobile apps for iOS and Android — built once in Flutter, deployed everywhere. From idea to App Store.</p>
-        <div class="tags">
-          <span class="tag">Flutter</span><span class="tag">Dart</span><span class="tag">iOS</span>
-          <span class="tag">Android</span><span class="tag">Firebase</span><span class="tag">REST APIs</span>
+      <div class="hero-proof" aria-label="Experience summary">
+        <div class="proof-item">
+          <span class="proof-number">10+</span>
+          <span class="proof-label">Years of product development</span>
         </div>
-      </div>
-      <div class="service-card">
-        <div class="service-icon">🌐</div>
-        <div class="service-title">Web &amp; Backend Development</div>
-        <p class="service-desc">Scalable web platforms, admin panels, and REST APIs built on Laravel and PHP. Fast, secure, and built to grow.</p>
-        <div class="tags">
-          <span class="tag">Laravel</span><span class="tag">PHP</span><span class="tag">MySQL</span>
-          <span class="tag">REST API</span><span class="tag">JavaScript</span><span class="tag">WordPress</span>
+        <div class="proof-item">
+          <span class="proof-number">15+</span>
+          <span class="proof-label">Projects shipped across industries</span>
         </div>
-      </div>
-      <div class="service-card">
-        <div class="service-icon">⚙️</div>
-        <div class="service-title">SaaS &amp; Custom Business Platforms</div>
-        <p class="service-desc">Custom software that replaces spreadsheets, manual processes, and disconnected tools — built around how your business actually works.</p>
-        <div class="tags">
-          <span class="tag">Laravel</span><span class="tag">MySQL</span><span class="tag">Flutter</span>
-          <span class="tag">API Integration</span><span class="tag">Subscriptions</span><span class="tag">Payments</span>
+        <div class="proof-item">
+          <span class="proof-number">6</span>
+          <span class="proof-label">Countries: India, Cameroon, US, Canada, Australia, Netherlands</span>
         </div>
-      </div>
-      <div class="service-card">
-        <div class="service-icon">🗄️</div>
-        <div class="service-title">Database Architecture &amp; API Development</div>
-        <p class="service-desc">Solid database design and clean API architecture that makes your system fast, maintainable, and ready to scale.</p>
-        <div class="tags">
-          <span class="tag">MySQL</span><span class="tag">REST APIs</span><span class="tag">Database Design</span>
-          <span class="tag">Query Optimisation</span><span class="tag">3rd-party Integrations</span>
+        <div class="proof-item">
+          <span class="proof-number">1</span>
+          <span class="proof-label">Developer accountable for mobile, web, backend and launch</span>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </header>
 
-<!-- CASE STUDIES -->
-<section id="work">
-  <div class="max-w">
-    <p class="section-label fade-up">Selected Work</p>
-    <h2 class="section-title fade-up">Projects that show what<br/>end-to-end looks like.</h2>
-    <p class="section-sub fade-up">A few projects that show what end-to-end development actually looks like.</p>
-    <div class="case-studies">
+  <main>
+    <section class="services" id="services">
+      <div class="shell">
+        <div class="section-head reveal">
+          <div>
+            <p class="section-kicker">What I Build</p>
+            <h2 class="section-title">Practical engineering for real product work.</h2>
+          </div>
+          <p class="section-copy">I help you move from idea to usable software: architecture, frontend, backend, database, payments, admin tools, integrations and launch support.</p>
+        </div>
 
-      <!-- GO Bus -->
-      <div class="case-card fade-up">
-        <div class="case-header">
-          <div class="case-meta">
-            <span class="case-emoji">🚌</span>
-            <div class="case-title">GO Bus</div>
-            <div class="case-oneliner">First-of-its-kind online bus booking platform in Cameroon with a unique payment system.</div>
-            <div class="case-tags" style="margin-top:0.6rem">
-              <span class="case-tag">Mobile App</span><span class="case-tag">Backend</span><span class="case-tag">Africa</span>
+        <div class="service-grid">
+          <article class="service-card reveal">
+            <span class="card-icon">01</span>
+            <h3>Mobile App Development</h3>
+            <p>Cross-platform iOS and Android apps built with Flutter, with clean user flows, reliable API integration and production-ready release support.</p>
+            <div class="tag-list">
+              <span class="tag">Flutter</span>
+              <span class="tag">Dart</span>
+              <span class="tag">iOS</span>
+              <span class="tag">Android</span>
+              <span class="tag">Firebase</span>
+            </div>
+          </article>
+
+          <article class="service-card reveal">
+            <span class="card-icon">02</span>
+            <h3>Laravel Backends & APIs</h3>
+            <p>Secure admin panels, REST APIs, authentication, payment flows, integrations and backend systems built to be maintainable after launch.</p>
+            <div class="tag-list">
+              <span class="tag">Laravel</span>
+              <span class="tag">PHP</span>
+              <span class="tag">REST APIs</span>
+              <span class="tag">MySQL</span>
+            </div>
+          </article>
+
+          <article class="service-card reveal">
+            <span class="card-icon">03</span>
+            <h3>Custom Business Platforms</h3>
+            <p>Software that replaces spreadsheets, manual tracking and disconnected tools with workflows built around how your business operates.</p>
+            <div class="tag-list">
+              <span class="tag">SaaS</span>
+              <span class="tag">Dashboards</span>
+              <span class="tag">Subscriptions</span>
+              <span class="tag">Payments</span>
+            </div>
+          </article>
+
+          <article class="service-card reveal">
+            <span class="card-icon">04</span>
+            <h3>WordPress & WooCommerce</h3>
+            <p>Fast business websites, e-commerce stores, custom plugins, subscriptions and community features for content-led or commerce-led brands.</p>
+            <div class="tag-list">
+              <span class="tag">WordPress</span>
+              <span class="tag">WooCommerce</span>
+              <span class="tag">Plugins</span>
+              <span class="tag">PHP</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="work" id="work">
+      <div class="shell">
+        <div class="section-head reveal">
+          <div>
+            <p class="section-kicker">Selected Work</p>
+            <h2 class="section-title">Projects with real workflows, users and constraints.</h2>
+          </div>
+          <p class="section-copy">Each project below shows full-stack thinking: user experience, backend structure, integrations, data design and launch execution.</p>
+        </div>
+
+        <div class="case-list">
+          <article class="case-card featured reveal">
+            <div>
+              <div class="case-meta">
+                <span class="badge badge-build">In Development</span>
+                <span class="badge">Mobile App</span>
+                <span class="badge">Backend</span>
+                <span class="badge">Cameroon</span>
+              </div>
+              <h3>GO Bus</h3>
+              <p>First-of-its-kind online bus booking platform in Cameroon with a market-specific payment system.</p>
+              <div class="case-problem">
+                <strong>Challenge</strong>
+                <p>Travellers relied on physical ticket counters with no reliable way to book in advance, check availability or pay online.</p>
+              </div>
+              <div class="case-problem">
+                <strong>What I Built</strong>
+                <p>A complete Flutter passenger app, Laravel backend, MySQL database and custom API/payment layer designed for local infrastructure.</p>
+              </div>
+              <div class="tag-list">
+                <span class="tag">Flutter</span>
+                <span class="tag">Laravel</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">REST API</span>
+                <span class="tag">Custom Payments</span>
+              </div>
+            </div>
+            <div class="screens">
+              <div class="screens-label">Product Screens</div>
+              <div class="screen-rail" aria-label="GO Bus screenshots">
+                <img class="screen-img" src="assets/img/gobus-1.png" alt="GO Bus mobile app screenshot 1" loading="lazy" tabindex="0" />
+                <img class="screen-img" src="assets/img/gobus-2.png" alt="GO Bus mobile app screenshot 2" loading="lazy" tabindex="0" />
+                <img class="screen-img" src="assets/img/gobus-3.png" alt="GO Bus mobile app screenshot 3" loading="lazy" tabindex="0" />
+                <img class="screen-img" src="assets/img/gobus-4.png" alt="GO Bus mobile app screenshot 4" loading="lazy" tabindex="0" />
+              </div>
+            </div>
+          </article>
+
+          <article class="case-card reveal">
+            <div>
+              <div class="case-meta">
+                <span class="badge">Mobile App</span>
+                <span class="badge">Health & Wellness</span>
+                <span class="badge">iOS & Android</span>
+              </div>
+              <h3>Diet Maker</h3>
+              <p>A personalised diet planning app supporting 10+ diet strategies, thousands of food choices and 60+ nutrient tracking.</p>
+              <ul class="feature-list">
+                <li>Keto, vegan, paleo, gluten-free, intermittent fasting and carb cycling support</li>
+                <li>60+ nutrients tracked per food item</li>
+                <li>Meal scheduling, notifications, progress tracking and subscription features</li>
+              </ul>
+              <div class="tag-list">
+                <span class="tag">Flutter</span>
+                <span class="tag">Dart</span>
+                <span class="tag">REST API</span>
+                <span class="tag">In-app Subscriptions</span>
+              </div>
+            </div>
+            <div class="screens">
+              <div class="screens-label">Product Screens</div>
+              <div class="screen-rail" aria-label="Diet Maker screenshots">
+                <img class="screen-img" src="assets/img/Dietmaker-1.PNG" alt="Diet Maker mobile app screenshot 1" loading="lazy" tabindex="0" />
+                <img class="screen-img" src="assets/img/dietmaker-2.PNG" alt="Diet Maker mobile app screenshot 2" loading="lazy" tabindex="0" />
+                <img class="screen-img" src="assets/img/dietmaker-3.PNG" alt="Diet Maker mobile app screenshot 3" loading="lazy" tabindex="0" />
+              </div>
+            </div>
+          </article>
+
+          <article class="case-card reveal">
+            <div>
+              <div class="case-meta">
+                <span class="badge badge-live">Live</span>
+                <span class="badge">Web Platform</span>
+                <span class="badge">E-commerce</span>
+                <span class="badge">Community</span>
+              </div>
+              <h3>The Pink Bookmark</h3>
+              <p>A full-featured platform for book lovers combining commerce, community, bookshelves, clubs, subscriptions and pre-orders.</p>
+              <ul class="feature-list">
+                <li>User profiles, personal bookshelves and book club features</li>
+                <li>WooCommerce store with subscriptions and pre-booking workflows</li>
+                <li>Custom WordPress and PHP development around community commerce</li>
+              </ul>
+              <div class="tag-list">
+                <span class="tag">WordPress</span>
+                <span class="tag">WooCommerce</span>
+                <span class="tag">PHP</span>
+                <span class="tag">MySQL</span>
+              </div>
+              <p style="margin-top:18px"><a href="https://thepinkbookmark.com" target="_blank" rel="noopener noreferrer">Visit live site</a></p>
+            </div>
+            <div class="screens">
+              <div class="screens-label">Product Screen</div>
+              <div class="screen-rail" aria-label="The Pink Bookmark screenshot">
+                <img class="screen-img wide" src="assets/img/Thepinkbookmark-1.png" alt="The Pink Bookmark website screenshot" loading="lazy" tabindex="0" />
+              </div>
+            </div>
+          </article>
+
+          <article class="case-card reveal">
+            <div>
+              <div class="case-meta">
+                <span class="badge badge-live">Live · 10+ Districts</span>
+                <span class="badge">Mobile App</span>
+                <span class="badge">Web Platform</span>
+                <span class="badge">India</span>
+              </div>
+              <h3>Him Rishtey</h3>
+              <p>A matrimonial platform serving users across Himachal Pradesh through mobile, web, admin and matchmaking workflows.</p>
+              <ul class="feature-list">
+                <li>Profile creation with education, job, community and photo details</li>
+                <li>Advanced search by caste, community, education and profession</li>
+                <li>Premium activations, interest requests, Kundli matching and admin workflows</li>
+              </ul>
+              <div class="tag-list">
+                <span class="tag">Flutter</span>
+                <span class="tag">Laravel</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">Payment Gateway</span>
+                <span class="tag">Admin Panel</span>
+              </div>
+            </div>
+            <div class="screens">
+              <div class="screens-label">Product Screens</div>
+              <div class="screen-rail" aria-label="Him Rishtey screenshots">
+                <img class="screen-img" src="assets/img/himrishtey-1.PNG" alt="Him Rishtey mobile app screenshot 1" loading="lazy" tabindex="0" />
+                <img class="screen-img" src="assets/img/himrishtey-2.PNG" alt="Him Rishtey mobile app screenshot 2" loading="lazy" tabindex="0" />
+                <img class="screen-img" src="assets/img/himrishtey-3.PNG" alt="Him Rishtey mobile app screenshot 3" loading="lazy" tabindex="0" />
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="engagements" id="engagements">
+      <div class="shell">
+        <div class="section-head reveal">
+          <div>
+            <p class="section-kicker">How I Can Help</p>
+            <h2 class="section-title">Choose the shape of support your project needs.</h2>
+          </div>
+          <p class="section-copy">Whether you are starting fresh, improving an existing product or need dependable long-term support, I can plug in with clear scope and ownership.</p>
+        </div>
+
+        <div class="engagement-grid">
+          <article class="engagement-card reveal">
+            <h3>MVP Build</h3>
+            <p>For founders who need a working mobile or web product with the right first version of backend, database, admin and launch flow.</p>
+            <div class="tag-list">
+              <span class="tag">Prototype to launch</span>
+              <span class="tag">Clear milestones</span>
+            </div>
+          </article>
+          <article class="engagement-card reveal">
+            <h3>Product Rebuild</h3>
+            <p>For teams with a slow, messy or outdated system that needs cleaner architecture, better UX and a more maintainable codebase.</p>
+            <div class="tag-list">
+              <span class="tag">Flutter</span>
+              <span class="tag">Laravel</span>
+              <span class="tag">WordPress</span>
+            </div>
+          </article>
+          <article class="engagement-card reveal">
+            <h3>Ongoing Partner</h3>
+            <p>For businesses that need a reliable technical partner for releases, fixes, integrations, performance and new product features.</p>
+            <div class="tag-list">
+              <span class="tag">Remote</span>
+              <span class="tag">Timezone flexible</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="stack" id="stack">
+      <div class="shell stack-layout">
+        <aside class="profile-panel reveal">
+          <img src="assets/img/MY-Profile-photo.jpg" alt="Jatin Raja, independent mobile and web developer" loading="lazy" />
+          <div class="profile-body">
+            <h3>Jatin Raja</h3>
+            <p>Independent mobile and web developer based in Jalandhar, India. Available for freelance projects and remote contracts worldwide.</p>
+          </div>
+        </aside>
+
+        <div>
+          <div class="section-head reveal" style="grid-template-columns:1fr;margin-bottom:28px">
+            <div>
+              <p class="section-kicker">Technologies</p>
+              <h2 class="section-title">A stack chosen for shipping maintainable products.</h2>
             </div>
           </div>
-          <span class="status-badge">🔄 In Development</span>
-        </div>
-        <div class="case-body">
-          <div>
-            <div class="case-col-label">The Challenge</div>
-            <p class="case-col-text">Cameroon had no reliable digital solution for intercity bus booking. Travellers relied entirely on physical ticket counters, with no way to book in advance, check availability, or pay online — especially challenging given the unique payment infrastructure in the region.</p>
-          </div>
-          <div>
-            <div class="case-col-label">What I Built</div>
-            <p class="case-col-text">A complete, full-stack bus booking system from scratch — Flutter mobile app for passengers, Laravel-powered backend, MySQL database, and a custom-built API layer. The payment system was designed specifically for the Cameroonian market, making it the first of its kind in the country.</p>
-          </div>
-        </div>
-        
-    <div class="screenshots">
-      <div class="screenshots-label">App Screenshots</div>
-      <div class="screens-track-wrap">
-        <div class="screens-track" id="track-140701294994688">
-          <img src="assets/img/gobus-1.png" alt="Go Bus" class="screen-img" loading="lazy" onclick="openLightbox(this.src)">
-          <img src="assets/img/gobus-2.png" alt="Go Bus" class="screen-img" loading="lazy" onclick="openLightbox(this.src)">
-          <img src="assets/img/gobus-3.png" alt="Go Bus" class="screen-img" loading="lazy" onclick="openLightbox(this.src)">
-          <img src="assets/img/gobus-4.png" alt="Go Bus" class="screen-img" loading="lazy" onclick="openLightbox(this.src)">
-           </div>
-      </div>
-    </div>
-        <div class="case-footer">
-          <div class="case-stack"><strong>Stack:</strong> Flutter · Laravel · MySQL · REST API · Custom Payment Integration</div>
-          <span class="case-tag" style="background:rgba(124,109,250,0.1);border-color:rgba(124,109,250,0.2);color:var(--accent2)">Solo full-stack delivery</span>
-        </div>
-      </div>
 
-      <!-- Diet Maker -->
-      <div class="case-card fade-up">
-        <div class="case-header">
-          <div class="case-meta">
-            <span class="case-emoji">🥗</span>
-            <div class="case-title">Diet Maker</div>
-            <div class="case-oneliner">A personalised diet planning app supporting 10+ diet strategies with 1,000s of food choices and 60+ nutrient tracking.</div>
-            <div class="case-tags" style="margin-top:0.6rem">
-              <span class="case-tag">Mobile App</span><span class="case-tag">Health &amp; Wellness</span><span class="case-tag">iOS &amp; Android</span>
-            </div>
-          </div>
-        </div>
-        <div class="case-body">
-          <div>
-            <div class="case-col-label">The Challenge</div>
-            <p class="case-col-text">Most diet apps are either too rigid or too complex for everyday users. The client needed an app that felt personal, flexible, and science-backed — supporting everything from keto to vegan to intermittent fasting.</p>
-          </div>
-          <div>
-            <div class="case-col-label">Key Features</div>
-            <ul class="case-features">
-              <li>Supports keto, vegan, paleo, gluten-free, intermittent fasting, carb cycling</li>
-              <li>60+ nutrients tracked per food item</li>
-              <li>Meal scheduling with daily notifications</li>
-              <li>Weight &amp; adherence progress tracking</li>
-              <li>Gold subscription with recipe library</li>
-            </ul>
-          </div>
-        </div>
-        
-    <div class="screenshots">
-      <div class="screenshots-label">App Screenshots</div>
-      <div class="screens-track-wrap">
-        <div class="screens-track" id="track-140701294995200">
-         <img src="assets/img/Dietmaker-1.PNG" alt="Diet Maker" class="screen-img" loading="lazy" onclick="openLightbox(this.src)">  
-         <img src="assets/img/dietmaker-2.PNG" alt="Diet Maker" class="screen-img" loading="lazy" onclick="openLightbox(this.src)">  
-         <img src="assets/img/dietmaker-3.PNG" alt="Diet Maker" class="screen-img" loading="lazy" onclick="openLightbox(this.src)">  
-        </div>
-      </div>
-    </div>
-        <div class="case-footer">
-          <div class="case-stack"><strong>Stack:</strong> Flutter · Dart · iOS · Android · REST API · In-app Subscriptions</div>
-        </div>
-      </div>
+          <div class="stack-grid">
+            <article class="stack-card reveal">
+              <h3>Mobile</h3>
+              <div class="tag-list">
+                <span class="tag">Flutter</span>
+                <span class="tag">Dart</span>
+                <span class="tag">Android</span>
+                <span class="tag">iOS</span>
+                <span class="tag">Firebase</span>
+              </div>
+            </article>
 
-      <!-- The Pink Bookmark -->
-      <div class="case-card fade-up">
-        <div class="case-header">
-          <div class="case-meta">
-            <span class="case-emoji">📚</span>
-            <div class="case-title">The Pink Bookmark</div>
-            <div class="case-oneliner">A full-featured online platform for book lovers — community, shelves, clubs, subscriptions and pre-orders, all in one place.</div>
-            <div class="case-tags" style="margin-top:0.6rem">
-              <span class="case-tag">Web Platform</span><span class="case-tag">E-commerce</span><span class="case-tag">Community</span>
-            </div>
-          </div>
-          <span class="status-badge status-live">🟢 Live</span>
-        </div>
-        <div class="case-body">
-          <div>
-            <div class="case-col-label">The Challenge</div>
-            <p class="case-col-text">Book lovers needed more than just an online store — they wanted a community. The client needed a platform combining e-commerce with social features like book clubs, personal bookshelves, user profiles, and pre-booking of upcoming titles.</p>
-          </div>
-          <div>
-            <div class="case-col-label">Key Features</div>
-            <ul class="case-features">
-              <li>Book community with user profiles</li>
-              <li>Personal bookshelf management</li>
-              <li>Book clubs with group features</li>
-              <li>WooCommerce store with subscriptions</li>
-              <li>Pre-booking for upcoming releases</li>
-            </ul>
-          </div>
-        </div>
-        
-    <div class="screenshots">
-      <div class="screenshots-label">App Screenshots</div>
-      <div class="screens-track-wrap">
-        <div class="screens-track" id="track-140701294998208">
-          <img src="assets/img/Thepinkbookmark-1.png" alt="The Pink Bookmark" class="screen-img" loading="lazy" onclick="openLightbox(this.src)">
-        </div>
-      </div>
-    </div>
-        <div class="case-footer">
-          <div class="case-stack"><strong>Stack:</strong> WordPress · WooCommerce · PHP · MySQL · Custom Plugin Development</div>
-          <a href="https://thepinkbookmark.com" class="case-link" target="_blank">Visit site →</a>
-        </div>
-      </div>
+            <article class="stack-card reveal">
+              <h3>Backend</h3>
+              <div class="tag-list">
+                <span class="tag">Laravel</span>
+                <span class="tag">PHP</span>
+                <span class="tag">REST APIs</span>
+                <span class="tag">WordPress</span>
+                <span class="tag">WooCommerce</span>
+              </div>
+            </article>
 
-      <!-- Him Rishtey -->
-      <div class="case-card fade-up">
-        <div class="case-header">
-          <div class="case-meta">
-            <span class="case-emoji">💍</span>
-            <div class="case-title">Him Rishtey</div>
-            <div class="case-oneliner">A full matrimonial platform serving thousands of users across Himachal Pradesh — mobile app, web portal, and matchmaking system.</div>
-            <div class="case-tags" style="margin-top:0.6rem">
-              <span class="case-tag">Mobile App</span><span class="case-tag">Web Platform</span><span class="case-tag">Matrimonial</span><span class="case-tag">India</span>
-            </div>
-          </div>
-          <span class="status-badge status-live">🟢 Live · 10+ Districts</span>
-        </div>
-        <div class="case-body">
-          <div>
-            <div class="case-col-label">The Challenge</div>
-            <p class="case-col-text">Himachal Pradesh lacked a dedicated, trusted matrimonial platform that understood its communities, castes, and regional identity. Existing national platforms felt generic and didn't serve local users in towns like Chamba, Palampur, and Manali.</p>
-          </div>
-          <div>
-            <div class="case-col-label">Key Features</div>
-            <ul class="case-features">
-              <li>Profile creation with photo, education, job, community details</li>
-              <li>Normal &amp; premium profile activation</li>
-              <li>Advanced search by caste, community, education, profession</li>
-              <li>Send, receive &amp; manage interest requests</li>
-              <li>Kundli matching integration</li>
-              <li>Strong offline + online hybrid presence across HP</li>
-            </ul>
-          </div>
-        </div>
-        
-    <div class="screenshots">
-      <div class="screenshots-label">App Screenshots</div>
-      <div class="screens-track-wrap">
-        <div class="screens-track" id="track-140701271981824">
-          <img src="assets/img/himrishtey-1.PNG" alt="HimRishtey" class="screen-img" loading="lazy" onclick="openLightbox(this.src)">
-          <img src="assets/img/himrishtey-2.PNG" alt="HimRishtey" class="screen-img" loading="lazy" onclick="openLightbox(this.src)">
-          <img src="assets/img/himrishtey-3.PNG" alt="HimRishtey" class="screen-img" loading="lazy" onclick="openLightbox(this.src)">
-        </div>
-      </div>
-    </div>
-        <div class="case-footer">
-          <div class="case-stack"><strong>Stack:</strong> Flutter · Laravel · MySQL · REST API · Payment Gateway · Admin Panel</div>
-          <span class="case-tag" style="background:rgba(34,197,94,0.1);border-color:rgba(34,197,94,0.2);color:var(--green)">Thousands of successful marriages</span>
-        </div>
-      </div>
+            <article class="stack-card reveal">
+              <h3>Database & Integrations</h3>
+              <div class="tag-list">
+                <span class="tag">MySQL</span>
+                <span class="tag">Database Design</span>
+                <span class="tag">Query Optimisation</span>
+                <span class="tag">Payments</span>
+              </div>
+            </article>
 
+            <article class="stack-card reveal">
+              <h3>Tools</h3>
+              <div class="tag-list">
+                <span class="tag">Git</span>
+                <span class="tag">GitHub</span>
+                <span class="tag">Postman</span>
+                <span class="tag">Figma</span>
+                <span class="tag">VS Code</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="about-text reveal">
+            <p><strong>About me:</strong> I have spent 10+ years building digital products across health and wellness, transport, matrimonial, e-commerce and community platforms.</p>
+            <p>I work across the full stack, so clients do not need to coordinate between a mobile developer, backend developer and database person. I take ownership of the system, the details and the handover.</p>
+            <p>I work best as a long-term technology partner: someone who understands the business, suggests practical technical decisions and communicates clearly through each stage of the project.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="process" id="process">
+      <div class="shell">
+        <div class="section-head reveal">
+          <div>
+            <p class="section-kicker">Process</p>
+            <h2 class="section-title">Simple, transparent and built around your timezone.</h2>
+          </div>
+          <p class="section-copy">The process stays direct: understand the business, agree the scope, build in visible milestones, launch properly and support what comes next.</p>
+        </div>
+
+        <div class="process-grid">
+          <article class="process-step reveal">
+            <span class="step-number">01</span>
+            <h3>Discovery Call</h3>
+            <p>A focused 15-30 minute conversation about your product, users, goals, timeline and fit.</p>
+          </article>
+          <article class="process-step reveal">
+            <span class="step-number">02</span>
+            <h3>Scope & Proposal</h3>
+            <p>A clear plan for what I will build, how long it will take and what the major milestones are.</p>
+          </article>
+          <article class="process-step reveal">
+            <span class="step-number">03</span>
+            <h3>Design & Build</h3>
+            <p>Focused development with regular check-ins, demos and clear communication through your preferred channel.</p>
+          </article>
+          <article class="process-step reveal">
+            <span class="step-number">04</span>
+            <h3>Review & Refine</h3>
+            <p>You test the product, share feedback and I refine the experience before release.</p>
+          </article>
+          <article class="process-step reveal">
+            <span class="step-number">05</span>
+            <h3>Launch & Handover</h3>
+            <p>Deployment, documentation, credentials and support so the product is ready for real users.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="shell">
+        <div class="contact-box reveal">
+          <div>
+            <p class="section-kicker" style="color:var(--gold)">Let's Talk</p>
+            <h2>Have an app, platform or product idea to build?</h2>
+            <p>I am currently available for new freelance projects and long-term remote contracts. Bring a scoped brief or a rough idea and we can map the next step together.</p>
+          </div>
+          <div class="contact-actions">
+            <a class="btn btn-primary" href="https://calendly.com/dev-jatin1609" target="_blank" rel="noopener noreferrer">Book a Free 15-Min Call</a>
+            <a class="btn btn-outline" href="https://wa.me/918528071912?text=Hi%20Jatin%2C%20I%20came%20across%20your%20portfolio%20and%20I%27m%20interested%20in%20working%20together.%20I%27d%20love%20to%20discuss%20my%20project%20requirements%20with%20you.%20When%20would%20be%20a%20good%20time%20to%20connect%3F" target="_blank" rel="noopener noreferrer">Message on WhatsApp</a>
+          </div>
+        </div>
+        <div class="contact-details reveal">
+          <span>Jalandhar, India · IST UTC+5:30</span>
+          <a href="mailto:dev.jatin1609@gmail.com">dev.jatin1609@gmail.com</a>
+          <a href="https://www.linkedin.com/in/jatinraja/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="shell footer-inner">
+      <div>
+        <div class="footer-brand">Jatin Raja</div>
+        <div>Independent Mobile & Web Consultant · Flutter · Laravel · iOS · Android · WordPress</div>
+      </div>
+      <div class="footer-links">
+        <a href="#services">Services</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div>© <span id="year"></span></div>
     </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" aria-modal="true" role="dialog" aria-label="Screenshot preview">
+    <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Close preview">×</button>
+    <img id="lightboxImage" src="" alt="" />
   </div>
-</section>
 
-<!-- TECH STACK -->
-<section id="stack">
-  <div class="max-w">
-    <p class="section-label fade-up">Technologies</p>
-    <h2 class="section-title fade-up">Technologies I Work With</h2>
-    <div class="divider fade-up"></div>
-    <div class="stack-groups fade-up">
-      <div class="stack-group">
-        <div class="stack-group-label">📱 Mobile</div>
-        <div class="stack-items">
-          <span class="stack-item">Flutter</span><span class="stack-item">Dart</span>
-          <span class="stack-item">Android</span><span class="stack-item">iOS</span>
-          <span class="stack-item">Firebase</span>
-        </div>
-      </div>
-      <div class="stack-group">
-        <div class="stack-group-label">🌐 Backend</div>
-        <div class="stack-items">
-          <span class="stack-item">Laravel</span><span class="stack-item">PHP</span>
-          <span class="stack-item">REST APIs</span><span class="stack-item">WordPress</span>
-          <span class="stack-item">WooCommerce</span>
-        </div>
-      </div>
-      <div class="stack-group">
-        <div class="stack-group-label">🗄️ Database</div>
-        <div class="stack-items">
-          <span class="stack-item">MySQL</span><span class="stack-item">Database Design</span>
-          <span class="stack-item">Query Optimisation</span>
-        </div>
-      </div>
-      <div class="stack-group">
-        <div class="stack-group-label">🛠️ Tools</div>
-        <div class="stack-items">
-          <span class="stack-item">Git</span><span class="stack-item">GitHub</span>
-          <span class="stack-item">Postman</span><span class="stack-item">Figma</span>
-          <span class="stack-item">VS Code</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+  <script>
+    const menuToggle = document.getElementById("menuToggle");
+    const navLinks = document.getElementById("navLinks");
+    const navAnchors = navLinks.querySelectorAll("a");
 
-<!-- ABOUT -->
-<section id="about">
-  <div class="max-w">
-    <div class="about-grid about-grid-new">
+    function setMenu(open) {
+      menuToggle.classList.toggle("is-open", open);
+      navLinks.classList.toggle("is-open", open);
+      menuToggle.setAttribute("aria-expanded", String(open));
+      menuToggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+    }
 
-      <!-- LEFT: Photo + Stats -->
-      <div class="about-left-col fade-up">
-        <div class="about-photo-frame">
-          <img src="assets/img/MY-Profile-photo.jpg" alt="Jatin Raja" class = "about-photo">
-          <div class="about-photo-badge">📍 Jalandhar, India</div>
-        </div>
-        <div class="about-stats-inline">
-          <div class="about-stat-small">
-            <div class="about-stat-num">10+</div>
-            <div class="about-stat-label">Years of experience</div>
-          </div>
-          <div class="about-stat-small">
-            <div class="about-stat-num">15+</div>
-            <div class="about-stat-label">Projects delivered</div>
-          </div>
-          <div class="about-stat-small">
-            <div class="about-stat-num">6</div>
-            <div class="about-stat-label">Countries served</div>
-          </div>
-          <div class="about-stat-small">
-            <div class="about-stat-num">1</div>
-            <div class="about-stat-label">Dev. full accountability</div>
-          </div>
-        </div>
-      </div>
+    menuToggle.addEventListener("click", () => {
+      setMenu(!navLinks.classList.contains("is-open"));
+    });
 
-      <!-- RIGHT: Text -->
-      <div class="about-text fade-up">
-        <p class="section-label">About Me</p>
-        <h2 class="section-title" style="margin-bottom:1.5rem">Jatin Raja</h2>
-        <p>I'm an <strong>independent mobile &amp; web developer</strong> based in Jalandhar, India, with over 10 years of experience building digital products that solve real problems.</p>
-        <p>I've worked across the full stack — Flutter mobile apps, Laravel backends, MySQL databases, and everything in between. What that means for you is simple: <strong>you don't need to coordinate between a mobile developer, a backend developer, and a database person.</strong> I handle it all, and I'm accountable for the whole thing.</p>
-        <p>Over the past decade I've shipped 15+ projects across industries — health &amp; wellness, transport, matrimonial, e-commerce, and community platforms — for clients in India, Africa, and beyond.</p>
-        <p>I work best as a <strong>long-term technology partner</strong>, not a one-time vendor. My goal is to understand your business deeply enough that I can make the right technical decisions — not just execute instructions.</p>
-        <p>I'm currently open to freelance projects and remote contracts worldwide. I'm flexible with timezones and communicate clearly throughout every project.</p>
-        <div class="about-closing">"Let's build something that actually works."</div>
-      </div>
+    navAnchors.forEach((anchor) => {
+      anchor.addEventListener("click", () => setMenu(false));
+    });
 
-    </div>
-  </div>
-</section>
-
-<!-- PROCESS -->
-<section id="process">
-  <div class="max-w">
-    <p class="section-label fade-up">How It Works</p>
-    <h2 class="section-title fade-up">Simple, transparent,<br/>built around your timezone.</h2>
-    <p class="section-sub fade-up" style="margin-bottom:2.5rem">Simple, transparent, and built around your timezone.</p>
-    <div class="process-steps fade-up" style="border:1px solid var(--border);border-radius:16px;overflow:hidden">
-      <div class="process-step">
-        <div class="step-num">01</div>
-        <div class="step-title">Discovery Call (Free)</div>
-        <p class="step-desc">15–30 minutes understanding your project, goals, and timeline. No pitch, no pressure — just an honest conversation about fit.</p>
-      </div>
-      <div class="process-step">
-        <div class="step-num">02</div>
-        <div class="step-title">Proposal &amp; Scope</div>
-        <p class="step-desc">A clear proposal — what I'll build, how long it'll take, and what it costs. No hidden fees, no vague timelines.</p>
-      </div>
-      <div class="process-step">
-        <div class="step-num">03</div>
-        <div class="step-title">Design &amp; Development</div>
-        <p class="step-desc">Focused sprints with regular check-ins, demos, and full transparency — via Slack, WhatsApp, or email, whatever works for you.</p>
-      </div>
-      <div class="process-step">
-        <div class="step-num">04</div>
-        <div class="step-title">Review &amp; Refine</div>
-        <p class="step-desc">You test, give feedback, and I refine. We don't ship until you're happy with it.</p>
-      </div>
-      <div class="process-step">
-        <div class="step-num">05</div>
-        <div class="step-title">Launch &amp; Handover</div>
-        <p class="step-desc">I handle deployment and hand over everything — code, documentation, credentials. Available after launch for support and ongoing work.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact">
-  <div class="max-w" style="max-width:700px">
-    <p class="section-label fade-up" style="text-align:center">Let's Talk</p>
-    <h2 class="section-title fade-up">Let's Build Something<br/><span style="color:var(--accent2)">Great.</span></h2>
-    <p class="section-sub fade-up" style="margin-left:auto;margin-right:auto;text-align:center">I'm currently available for new projects and long-term remote contracts. Whether you have a fully scoped brief or just an idea — let's talk.</p>
-    <div class="contact-btns fade-up">
-      <a href="https://calendly.com/dev-jatin1609" target="_blank" class="btn-primary">Book a Free 15-Min Call</a>
-    </div>
-    <p class="contact-email fade-up">Prefer email? Reach me at <a href="mailto:dev.jatin1609@gmail.com">dev.jatin1609@gmail.com</a></p>
-    <p class="contact-location fade-up" style="margin-top:0.5rem">📍 Based in Jalandhar, India (IST · UTC+5:30) — Available worldwide · Flexible with timezones</p>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer>
-  <div>
-    <div class="footer-name">Jatin Raja<span>.</span></div>
-    <div class="footer-copy" style="margin-top:0.3rem">Independent Mobile & Web Consultant | Flutter • Laravel • iOS • Android | 10+ Yrs | Helping Startups & Businesses Build Scalable Products · Jalandhar, India</div>
-  </div>
-  <div class="social-links">
-    <a href="https://www.linkedin.com/in/jatinraja/" class="social-link">LinkedIn</a>
-    <!-- <a href="#" class="social-link">GitHub</a> -->
-    <a href="https://wa.me/918528071912?text=Hi%20Jatin%2C%20I%20came%20across%20your%20portfolio%20and%20I%27m%20interested%20in%20working%20together.%20I%27d%20love%20to%20discuss%20my%20project%20requirements%20with%20you.%20When%20would%20be%20a%20good%20time%20to%20connect%3F" class="social-link">WhatsApp</a>
-  </div>
-</footer>
-
-<script>
-  // Intersection Observer for fade-up animations
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(el => {
-      if (el.isIntersecting) {
-        el.target.classList.add('visible');
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") {
+        setMenu(false);
+        closeLightbox();
       }
     });
-  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
 
-  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+    const revealEls = document.querySelectorAll(".reveal");
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: "0px 0px -40px 0px" });
 
-  // Stagger children in grid containers
-  document.querySelectorAll('.services-grid, .stack-groups, .case-studies, .process-steps').forEach(container => {
-    [...container.children].forEach((child, i) => {
-      child.style.transitionDelay = `${i * 0.07}s`;
-      child.classList.add('fade-up');
-      observer.observe(child);
+    revealEls.forEach((el) => revealObserver.observe(el));
+
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImage = document.getElementById("lightboxImage");
+    const lightboxClose = document.getElementById("lightboxClose");
+    const screenshots = document.querySelectorAll(".screen-img");
+
+    function openLightbox(src, alt) {
+      lightboxImage.src = src;
+      lightboxImage.alt = alt || "Project screenshot";
+      lightbox.classList.add("is-open");
+      document.body.style.overflow = "hidden";
+      lightboxClose.focus();
+    }
+
+    window.openLightbox = openLightbox;
+
+    function closeLightbox() {
+      lightbox.classList.remove("is-open");
+      lightboxImage.src = "";
+      document.body.style.overflow = "";
+    }
+
+    screenshots.forEach((image) => {
+      image.addEventListener("click", () => openLightbox(image.src, image.alt));
+      image.addEventListener("keydown", (event) => {
+        if (event.key === "Enter" || event.key === " ") {
+          event.preventDefault();
+          openLightbox(image.src, image.alt);
+        }
+      });
     });
-  });
-</script>
 
-<div id="lightbox">
-  <button id="lightbox-close" onclick="document.getElementById('lightbox').classList.remove('open')">✕</button>
-  <img id="lightbox-img" src="" alt="Screenshot" />
-</div>
+    lightboxClose.addEventListener("click", closeLightbox);
+    lightbox.addEventListener("click", (event) => {
+      if (event.target === lightbox) {
+        closeLightbox();
+      }
+    });
 
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
